@@ -1,0 +1,272 @@
+@font-face {
+    font-family: 'D-DIN';
+    src: url('font/D-DIN.otf');
+}
+
+@font-face {
+    font-family: 'D-DIN';
+    font-weight: bold;
+    src: url('font/D-DIN-Bold.otf');
+}
+
+@font-face {
+    font-family: 'D-DIN';
+    font-style: italic;
+    src: url('font/D-DIN-Italic.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: unset;
+    color: unset;
+}
+
+html {
+    font-family: 'D-DIN', sans-serif;
+    font-size: 24px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #444444;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    min-width: 100%;
+    height: min-content;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+header {
+    flex: 0 0 89px;
+    display: flex;
+    align-items: center;
+    width: min-content;
+    min-width: 100%;
+    background: #C9D1D3;
+}
+
+header .logo {
+    flex: 0 0;
+    display: flex;
+    align-items: center;
+    margin-left: -26px;
+    height: 100%;
+    background: #2A3F59;
+    transform: skewX(30deg);
+}
+
+header .logo img {
+    flex: 0 0;
+    margin: 0 26px 0 41px;
+    height: 38px;
+    transform: skewX(-30deg);
+}
+
+header .spacer {
+    flex: 0 0 33px;
+    margin-left: -1px;
+    height: 100%;
+    background: #44668A;
+    transform: skewX(30deg);
+}
+
+.nav {
+    flex: 0 0;
+    display: flex;
+    margin-right: 34px;
+    padding-right: 22px;
+    height: 100%;
+}
+
+.nav li {
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 42px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #344066;
+}
+
+.nav .selected {
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid #344066;
+}
+
+.content {
+    flex: 1 1;
+    background: #2A3F59;
+}
+
+.full-width {
+    padding: 50px 80px;
+    color: #ECECEC;
+}
+
+.full-width .right {
+    width: max-content;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.full-width .center {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-width h1 {
+    margin-bottom: 33px;
+    font-size: 96px;
+    font-weight: bold;
+    color: #FCFCFC;
+    white-space: nowrap;
+}
+
+.full-width h1 mark {
+    position: relative;
+    background: unset;
+    color: unset;
+}
+
+.full-width h1 mark::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -10px;
+    bottom: 0;
+    left: -10px;
+    pointer-events: none;
+    background: #A3A3A3;
+    mix-blend-mode: overlay;
+}
+
+.full-width h1 mark.red::before {
+    background: #900000;
+    mix-blend-mode: screen;
+}
+
+.full-width p {
+    margin: 33px 0;
+}
+
+.play-button, .play-button-red {
+    display: block;
+    margin: 10px 0;
+    padding: 15px;
+    width: max-content;
+    font-size: 90px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.play-button {
+    background: #0C1219;
+}
+
+.play-button-red {
+    background: #A2252E;
+}
+
+.img-soldiers {
+    float: right;
+    margin: -26px -80px 0 0;
+    shape-outside: url('img/bg-soldiers.png');
+}
+
+.bg-opensoldat {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.2), transparent 50px),
+        linear-gradient(#509090, #000000);
+}
+
+.bg-features {
+    background:
+        no-repeat top right url('img/bg-features.png'),
+        right linear-gradient(270deg, #73683a 0 550px, transparent 1400px);
+}
+
+.bg-code {
+    background: url('img/bg-code.png');
+}
+
+.bg-playnow {
+    background:
+        top linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 300px, transparent 600px),
+        0 / 101% url('img/bg-playnow-flag.svg'),
+        0 / 101% url('img/bg-playnow-soldiers.svg'),
+        0 / 101% url('img/bg-playnow-ground.svg'),
+        0 / 101% url('img/bg-playnow-back.svg');
+}
+
+footer {
+    flex: 0 0;
+    display: flex;
+    justify-content: center;
+    padding: 18px 0;
+    width: min-content;
+    min-width: 100%;
+    background: #0C1219;
+    font-size: 21px;
+    color: #A6A7A8;
+}
+
+.info {
+    flex: 0 0;
+    margin: 0 0 7px 75px;
+}
+
+footer .logo {
+    margin: 25px 0;
+    height: 52px;
+}
+
+footer .spacer {
+    flex: 0 0 3px;
+    margin: 0 40px;
+    background: #FFFFFF;
+}
+
+.sitemap {
+    display: flex;
+    flex: 0 0;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.sitemap h2 {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.sitemap li {
+    display: block;
+}
+
+.sitemap>li {
+    margin-right: 75px;
+}
+
+.sitemap h2 {
+    margin-bottom: 6px;
+    color: #FFFFFF;
+}
+
+.sitemap h2 a {
+    border-bottom: 2px solid transparent;
+}
+
+.sitemap h2.selected a {
+    border-bottom: 2px solid #FFFFFF;
+}
