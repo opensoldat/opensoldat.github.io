@@ -1,0 +1,66 @@
+[
+    {
+        "title": "Home",
+        "url": "index.html",
+        "children": [
+            {
+                "title": "OpenSoldat",
+                "url": "index.html#opensoldat"
+            },
+            {
+                "title": "Features",
+                "url": "index.html#features"
+            },
+            {
+                "title": "Code",
+                "url": "index.html#code"
+            },
+            {
+                "title": "Play Now!",
+                "url": "index.html#playnow"
+            }
+        ]
+    },
+    {
+        "title": "Download",
+        "url": "download.html",
+        "children": [
+            {
+                "title": "OpenSoldat",
+                "url": "download.html#opensoldat"
+            },
+            {
+                "title": "PolyWorks",
+                "url": "download.html#polyworks"
+            },
+            {
+                "title": "Tools and Scripts",
+                "url": "download.html#tools"
+            }
+        ]
+    },
+    {
+        "title": "News",
+        "url": "news.html",
+        "children": []
+    },
+    {
+        "title": "Community",
+        "url": "community.html",
+        "children": [
+            {
+                "title": "Discord",
+                "url": "community.html#discord"
+            },
+            {
+                "title": "Team",
+                "url": "community.html#team"
+            }
+        ]
+    },
+    {
+        "title": "FAQ",
+        "url": "faq.html",
+        "children": []
+    }
+]
