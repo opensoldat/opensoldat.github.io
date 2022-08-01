@@ -7,13 +7,22 @@ Requirements
 ------------
 * node 16+
 
-Building
+Setup
 --------
 * cd src
 * npm i
-* npx @11ty/eleventy
+
+Building
+--------
+* cd src
+* npm run build
 
 Generated files will apear in parent directory (e.g. index.html)
+
+Development Server
+------------------
+* cd src
+* npm start
 
 License
 -------
